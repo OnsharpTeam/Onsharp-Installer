@@ -23,7 +23,7 @@ public class OnsharpInstaller {
 
     public static void main(String[] args) throws Exception {
         String destPath = new File(OnsharpInstaller.class.getProtectionDomain().getCodeSource().getLocation()
-                .toURI()).getAbsolutePath();
+                .toURI()).getParentFile().getAbsolutePath();
         String configPath = destPath + "/server_config.json";
         if (!new File(configPath).exists()) {
             System.out.println("[Onsharp-Installer] NO SERVER CONFIG FILE FOUND: THE INSTALLER MUST BE IN THE SERVER DIRECTORY!");
