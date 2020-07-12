@@ -7,5 +7,6 @@ public class InstallData {
 
     private String version;
     private String timestamp;
-    private String file;
+    private String win;
+    private String unix;
 }
